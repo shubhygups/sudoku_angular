@@ -1,6 +1,6 @@
 # Sudoku
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9. This project is purely frontend code. This includes some hard coded predefined values. Based on inputs from user in different cells of sudoku table. Valid messages will display. A user is allowed to do 3 mistakes. After that game will be over. Also, "Well Done" message will display on successful completetion.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9. This project is purely frontend code. This includes some hard coded predefined values. Based on inputs from user in different cells of sudoku table. Valid messages will display. A user is allowed to do 3 mistakes. After that game will be over. Also, "Well Done" message will display on successful completion.
 
 ## Development server
 
