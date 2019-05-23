@@ -33,4 +33,4 @@ If a user pressed submit button without filling the values. It will alert the us
 
 ## Note
 
-You can modify this code as per requirement and for dynamic sudoku initial values. You can easily bind this with any backend server. Any comments are appreciated.
+You can modify this code as per requirement and for dynamic sudoku initial values, you can easily bind this with any backend server. Any comments are appreciated.
