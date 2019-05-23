@@ -1,0 +1,123 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+<h1>
+Welcome to {{ title }}!
+</h1>
+
+
+
+<h2 *ngIf="check_complete_error">{{ message }}</h2>
+
+
+
+<p>{{timestart}} Seconds over....</p> 
+
+<form #userForm="ngForm">
+
+
+<div class="form-group">
+<table>
+  <tr>
+    <td [class.redborder]="r0c0.invalid && r0c0.touched"><input required (blur)="decreaseChance(r0c0.invalid, r0c0.dirty,'r0c0')" style="border:0; height:30px; width:40px;"  type="text" #r0c0="ngModel" pattern="[4]" class="form-control" name="r0c0" [(ngModel)]="userModel.r0c0"></td>
+    <td [class.redborder]="r0c1.invalid && r0c1.touched"><input required (blur)="decreaseChance(r0c1.invalid, r0c1.dirty,'r0c1')" style="border:0; height:30px; width:40px;"  type="text" #r0c1="ngModel" pattern="[3]" class="form-control" name="r0c1" [(ngModel)]="userModel.r0c1"></td>  
+    <td [class.redborder]="r0c2.invalid && r0c2.touched"><input required (blur)="decreaseChance(r0c2.invalid, r0c2.dirty,'r0c2')" style="border:0; height:30px; width:40px;"  type="text" #r0c2="ngModel" pattern="[5]" class="form-control" name="r0c2" [(ngModel)]="userModel.r0c2"></td>
+    <td [class.redborder]="r0c3.invalid && r0c3.touched"><input required (blur)="decreaseChance(r0c3.invalid, r0c3.dirty,'r0c3')" style="border:0; height:30px; width:40px;"  type="text" #r0c3="ngModel" pattern="[2]" class="form-control" name="r0c3" [(ngModel)]="userModel.r0c3"></td>  
+    <td [class.redborder]="r0c4.invalid && r0c4.touched"><input required (blur)="decreaseChance(r0c4.invalid, r0c4.dirty,'r0c4')" style="border:0; height:30px; width:40px;"  type="text" #r0c4="ngModel" pattern="[6]" class="form-control" name="r0c4" [(ngModel)]="userModel.r0c4"></td>
+    <td [class.redborder]="r0c5.invalid && r0c5.touched"><input required (blur)="decreaseChance(r0c5.invalid, r0c5.dirty,'r0c5')" style="border:0; height:30px; width:40px;"  type="text" #r0c5="ngModel" pattern="[9]" class="form-control" name="r0c5" [(ngModel)]="userModel.r0c5"></td>  
+    <td [class.redborder]="r0c6.invalid && r0c6.touched"><input required (blur)="decreaseChance(r0c6.invalid, r0c6.dirty,'r0c6')" style="border:0; height:30px; width:40px;"  type="text" #r0c6="ngModel" pattern="[7]" class="form-control" name="r0c6" [(ngModel)]="userModel.r0c6"></td>
+    <td [class.redborder]="r0c7.invalid && r0c7.touched"><input required (blur)="decreaseChance(r0c7.invalid, r0c7.dirty,'r0c7')" style="border:0; height:30px; width:40px;"  type="text" #r0c7="ngModel" pattern="[8]" class="form-control" name="r0c7" [(ngModel)]="userModel.r0c7"></td>  
+    <td [class.redborder]="r0c8.invalid && r0c8.touched"><input required (blur)="decreaseChance(r0c8.invalid, r0c8.dirty,'r0c8')" style="border:0; height:30px; width:40px;"  type="text" #r0c8="ngModel" pattern="[1]" class="form-control" name="r0c8" [(ngModel)]="userModel.r0c8"></td>
+  </tr>
+  <tr>
+    <td [class.redborder]="r1c0.invalid && r1c0.touched"><input required (blur)="decreaseChance(r1c0.invalid, r1c0.dirty,'r1c0')" style="border:0; height:30px; width:40px;"  type="text" #r1c0="ngModel" pattern="[6]" class="form-control" name="r1c0" [(ngModel)]="userModel.r1c0" ></td>
+    <td [class.redborder]="r1c1.invalid && r1c1.touched"><input required (blur)="decreaseChance(r1c1.invalid, r1c1.dirty,'r1c1')" style="border:0; height:30px; width:40px;"  type="text" #r1c1="ngModel" pattern="[8]" class="form-control" name="r1c1" [(ngModel)]="userModel.r1c1" ></td>  
+    <td [class.redborder]="r1c2.invalid && r1c2.touched"><input required (blur)="decreaseChance(r1c2.invalid, r1c2.dirty,'r1c2')" style="border:0; height:30px; width:40px;"  type="text" #r1c2="ngModel" pattern="[2]" class="form-control" name="r1c2" [(ngModel)]="userModel.r1c2"></td>
+    <td [class.redborder]="r1c3.invalid && r1c3.touched"><input required (blur)="decreaseChance(r1c3.invalid, r1c3.dirty,'r1c3')" style="border:0; height:30px; width:40px;"  type="text" #r1c3="ngModel" pattern="[5]" class="form-control" name="r1c3" [(ngModel)]="userModel.r1c3"></td>  
+    <td [class.redborder]="r1c4.invalid && r1c4.touched"><input required (blur)="decreaseChance(r1c4.invalid, r1c4.dirty,'r1c4')" style="border:0; height:30px; width:40px;"  type="text" #r1c4="ngModel" pattern="[7]" class="form-control" name="r1c4" [(ngModel)]="userModel.r1c4"></td>
+    <td [class.redborder]="r1c5.invalid && r1c5.touched"><input required (blur)="decreaseChance(r1c5.invalid, r1c5.dirty,'r1c5')" style="border:0; height:30px; width:40px;"  type="text" #r1c5="ngModel" pattern="[1]" class="form-control" name="r1c5" [(ngModel)]="userModel.r1c5"></td>  
+    <td [class.redborder]="r1c6.invalid && r1c6.touched"><input required (blur)="decreaseChance(r1c6.invalid, r1c6.dirty,'r1c6')" style="border:0; height:30px; width:40px;"  type="text" #r1c6="ngModel" pattern="[4]" class="form-control" name="r1c6" [(ngModel)]="userModel.r1c6"></td>
+    <td [class.redborder]="r1c7.invalid && r1c7.touched"><input required (blur)="decreaseChance(r1c7.invalid, r1c7.dirty,'r1c7')" style="border:0; height:30px; width:40px;"  type="text" #r1c7="ngModel" pattern="[9]" class="form-control" name="r1c7" [(ngModel)]="userModel.r1c7"></td>  
+    <td [class.redborder]="r1c8.invalid && r1c8.touched"><input required (blur)="decreaseChance(r1c8.invalid, r1c8.dirty,'r1c8')" style="border:0; height:30px; width:40px;"  type="text" #r1c8="ngModel" pattern="[3]" class="form-control" name="r1c8" [(ngModel)]="userModel.r1c8"></td>
+  </tr>
+  <tr>
+    <td [class.redborder]="r2c0.invalid && r2c0.touched"><input required (blur)="decreaseChance(r2c0.invalid, r2c0.dirty,'r2c0')" style="border:0; height:30px; width:40px;"  type="text" #r2c0="ngModel" pattern="[1]" class="form-control" name="r2c0" [(ngModel)]="userModel.r2c0"></td>
+    <td [class.redborder]="r2c1.invalid && r2c1.touched"><input required (blur)="decreaseChance(r2c1.invalid, r2c1.dirty,'r2c1')" style="border:0; height:30px; width:40px;"  type="text" #r2c1="ngModel" pattern="[9]" class="form-control" name="r2c1" [(ngModel)]="userModel.r2c1"></td>  
+    <td [class.redborder]="r2c2.invalid && r2c2.touched"><input required (blur)="decreaseChance(r2c2.invalid, r2c2.dirty,'r2c2')" style="border:0; height:30px; width:40px;"  type="text" #r2c2="ngModel" pattern="[7]" class="form-control" name="r2c2" [(ngModel)]="userModel.r2c2"></td>
+    <td [class.redborder]="r2c3.invalid && r2c3.touched"><input required (blur)="decreaseChance(r2c3.invalid, r2c3.dirty,'r2c3')" style="border:0; height:30px; width:40px;"  type="text" #r2c3="ngModel" pattern="[8]" class="form-control" name="r2c3" [(ngModel)]="userModel.r2c3"></td>  
+    <td [class.redborder]="r2c4.invalid && r2c4.touched"><input required (blur)="decreaseChance(r2c4.invalid, r2c4.dirty,'r2c4')" style="border:0; height:30px; width:40px;"  type="text" #r2c4="ngModel" pattern="[3]" class="form-control" name="r2c4" [(ngModel)]="userModel.r2c4"></td>
+    <td [class.redborder]="r2c5.invalid && r2c5.touched"><input required (blur)="decreaseChance(r2c5.invalid, r2c5.dirty,'r2c5')" style="border:0; height:30px; width:40px;"  type="text" #r2c5="ngModel" pattern="[4]" class="form-control" name="r2c5" [(ngModel)]="userModel.r2c5"></td>  
+    <td [class.redborder]="r2c6.invalid && r2c6.touched"><input required (blur)="decreaseChance(r2c6.invalid, r2c6.dirty,'r2c6')" style="border:0; height:30px; width:40px;"  type="text" #r2c6="ngModel" pattern="[5]" class="form-control" name="r2c6" [(ngModel)]="userModel.r2c6"></td>
+    <td [class.redborder]="r2c7.invalid && r2c7.touched"><input required (blur)="decreaseChance(r2c7.invalid, r2c7.dirty,'r2c7')" style="border:0; height:30px; width:40px;"  type="text" #r2c7="ngModel" pattern="[6]" class="form-control" name="r2c7" [(ngModel)]="userModel.r2c7"></td>  
+    <td [class.redborder]="r2c8.invalid && r2c8.touched"><input required (blur)="decreaseChance(r2c8.invalid, r2c8.dirty,'r2c8')" style="border:0; height:30px; width:40px;"  type="text" #r2c8="ngModel" pattern="[2]" class="form-control" name="r2c8" [(ngModel)]="userModel.r2c8"></td>
+  </tr>
+  <tr>
+    <td [class.redborder]="r3c0.invalid && r3c0.touched"><input required (blur)="decreaseChance(r3c0.invalid, r3c0.dirty,'r3c0')" style="border:0; height:30px; width:40px;"  type="text" #r3c0="ngModel" pattern="[8]" class="form-control" name="r3c0" [(ngModel)]="userModel.r3c0"></td>
+    <td [class.redborder]="r3c1.invalid && r3c1.touched"><input required (blur)="decreaseChance(r3c1.invalid, r3c1.dirty,'r3c1')" style="border:0; height:30px; width:40px;"  type="text" #r3c1="ngModel" pattern="[2]" class="form-control" name="r3c1" [(ngModel)]="userModel.r3c1"></td>  
+    <td [class.redborder]="r3c2.invalid && r3c2.touched"><input required (blur)="decreaseChance(r3c2.invalid, r3c2.dirty,'r3c2')" style="border:0; height:30px; width:40px;"  type="text" #r3c2="ngModel" pattern="[6]" class="form-control" name="r3c2" [(ngModel)]="userModel.r3c2"></td>
+    <td [class.redborder]="r3c3.invalid && r3c3.touched"><input required (blur)="decreaseChance(r3c3.invalid, r3c3.dirty,'r3c3')" style="border:0; height:30px; width:40px;"  type="text" #r3c3="ngModel" pattern="[1]" class="form-control" name="r3c3" [(ngModel)]="userModel.r3c3"></td>  
+    <td [class.redborder]="r3c4.invalid && r3c4.touched"><input required (blur)="decreaseChance(r3c4.invalid, r3c4.dirty,'r3c4')" style="border:0; height:30px; width:40px;"  type="text" #r3c4="ngModel" pattern="[9]" class="form-control" name="r3c4" [(ngModel)]="userModel.r3c4"></td>
+    <td [class.redborder]="r3c5.invalid && r3c5.touched"><input required (blur)="decreaseChance(r3c5.invalid, r3c5.dirty,'r3c5')" style="border:0; height:30px; width:40px;"  type="text" #r3c5="ngModel" pattern="[5]" class="form-control" name="r3c5" [(ngModel)]="userModel.r3c5"></td>  
+    <td [class.redborder]="r3c6.invalid && r3c6.touched"><input required (blur)="decreaseChance(r3c6.invalid, r3c6.dirty,'r3c6')" style="border:0; height:30px; width:40px;"  type="text" #r3c6="ngModel" pattern="[3]" class="form-control" name="r3c6" [(ngModel)]="userModel.r3c6"></td>
+    <td [class.redborder]="r3c7.invalid && r3c7.touched"><input required (blur)="decreaseChance(r3c7.invalid, r3c7.dirty,'r3c7')" style="border:0; height:30px; width:40px;"  type="text" #r3c7="ngModel" pattern="[4]" class="form-control" name="r3c7" [(ngModel)]="userModel.r3c7"></td>  
+    <td [class.redborder]="r3c8.invalid && r3c8.touched"><input required (blur)="decreaseChance(r3c8.invalid, r3c8.dirty,'r3c8')" style="border:0; height:30px; width:40px;"  type="text" #r3c8="ngModel" pattern="[7]" class="form-control" name="r3c8" [(ngModel)]="userModel.r3c8"></td>
+  </tr>
+  <tr>
+    <td [class.redborder]="r4c0.invalid && r4c0.touched"><input required (blur)="decreaseChance(r4c0.invalid, r4c0.dirty,'r4c0')" style="border:0; height:30px; width:40px;"  type="text" #r4c0="ngModel" pattern="[3]" class="form-control" name="r4c0" [(ngModel)]="userModel.r4c0"></td>
+    <td [class.redborder]="r4c1.invalid && r4c1.touched"><input required (blur)="decreaseChance(r4c1.invalid, r4c1.dirty,'r4c1')" style="border:0; height:30px; width:40px;"  type="text" #r4c1="ngModel" pattern="[7]" class="form-control" name="r4c1" [(ngModel)]="userModel.r4c1"></td>  
+    <td [class.redborder]="r4c2.invalid && r4c2.touched"><input required (blur)="decreaseChance(r4c2.invalid, r4c2.dirty,'r4c2')" style="border:0; height:30px; width:40px;"  type="text" #r4c2="ngModel" pattern="[4]" class="form-control" name="r4c2" [(ngModel)]="userModel.r4c2"></td>
+    <td [class.redborder]="r4c3.invalid && r4c3.touched"><input required (blur)="decreaseChance(r4c3.invalid, r4c3.dirty,'r4c3')" style="border:0; height:30px; width:40px;"  type="text" #r4c3="ngModel" pattern="[6]" class="form-control" name="r4c3" [(ngModel)]="userModel.r4c3"></td>  
+    <td [class.redborder]="r4c4.invalid && r4c4.touched"><input required (blur)="decreaseChance(r4c4.invalid, r4c4.dirty,'r4c4')" style="border:0; height:30px; width:40px;"  type="text" #r4c4="ngModel" pattern="[8]" class="form-control" name="r4c4" [(ngModel)]="userModel.r4c4"></td>
+    <td [class.redborder]="r4c5.invalid && r4c5.touched"><input required (blur)="decreaseChance(r4c5.invalid, r4c5.dirty,'r4c5')" style="border:0; height:30px; width:40px;"  type="text" #r4c5="ngModel" pattern="[2]" class="form-control" name="r4c5" [(ngModel)]="userModel.r4c5"></td>  
+    <td [class.redborder]="r4c6.invalid && r4c6.touched"><input required (blur)="decreaseChance(r4c6.invalid, r4c6.dirty,'r4c6')" style="border:0; height:30px; width:40px;"  type="text" #r4c6="ngModel" pattern="[9]" class="form-control" name="r4c6" [(ngModel)]="userModel.r4c6"></td>
+    <td [class.redborder]="r4c7.invalid && r4c7.touched"><input required (blur)="decreaseChance(r4c7.invalid, r4c7.dirty,'r4c7')" style="border:0; height:30px; width:40px;"  type="text" #r4c7="ngModel" pattern="[1]" class="form-control" name="r4c7" [(ngModel)]="userModel.r4c7"></td>  
+    <td [class.redborder]="r4c8.invalid && r4c8.touched"><input required (blur)="decreaseChance(r4c8.invalid, r4c8.dirty,'r4c8')" style="border:0; height:30px; width:40px;"  type="text" #r4c8="ngModel" pattern="[5]" class="form-control" name="r4c8" [(ngModel)]="userModel.r4c8"></td>
+  </tr>
+  <tr>
+    <td [class.redborder]="r5c0.invalid && r5c0.touched"><input required (blur)="decreaseChance(r5c0.invalid, r5c0.dirty,'r5c0')" style="border:0; height:30px; width:40px;"  type="text" #r5c0="ngModel" pattern="[9]" class="form-control" name="r5c0" [(ngModel)]="userModel.r5c0"></td>
+    <td [class.redborder]="r5c1.invalid && r5c1.touched"><input required (blur)="decreaseChance(r5c1.invalid, r5c1.dirty,'r5c1')" style="border:0; height:30px; width:40px;"  type="text" #r5c1="ngModel" pattern="[5]" class="form-control" name="r5c1" [(ngModel)]="userModel.r5c1"></td>  
+    <td [class.redborder]="r5c2.invalid && r5c2.touched"><input required (blur)="decreaseChance(r5c2.invalid, r5c2.dirty,'r5c2')" style="border:0; height:30px; width:40px;"  type="text" #r5c2="ngModel" pattern="[1]" class="form-control" name="r5c2" [(ngModel)]="userModel.r5c2"></td>
+    <td [class.redborder]="r5c3.invalid && r5c3.touched"><input required (blur)="decreaseChance(r5c3.invalid, r5c3.dirty,'r5c3')" style="border:0; height:30px; width:40px;"  type="text" #r5c3="ngModel" pattern="[7]" class="form-control" name="r5c3" [(ngModel)]="userModel.r5c3"></td>  
+    <td [class.redborder]="r5c4.invalid && r5c4.touched"><input required (blur)="decreaseChance(r5c4.invalid, r5c4.dirty,'r5c4')" style="border:0; height:30px; width:40px;"  type="text" #r5c4="ngModel" pattern="[4]" class="form-control" name="r5c4" [(ngModel)]="userModel.r5c4"></td>
+    <td [class.redborder]="r5c5.invalid && r5c5.touched"><input required (blur)="decreaseChance(r5c5.invalid, r5c5.dirty,'r5c5')" style="border:0; height:30px; width:40px;"  type="text" #r5c5="ngModel" pattern="[3]" class="form-control" name="r5c5" [(ngModel)]="userModel.r5c5"></td>  
+    <td [class.redborder]="r5c6.invalid && r5c6.touched"><input required (blur)="decreaseChance(r5c6.invalid, r5c6.dirty,'r5c6')" style="border:0; height:30px; width:40px;"  type="text" #r5c6="ngModel" pattern="[6]" class="form-control" name="r5c6" [(ngModel)]="userModel.r5c6"></td>
+    <td [class.redborder]="r5c7.invalid && r5c7.touched"><input required (blur)="decreaseChance(r5c7.invalid, r5c7.dirty,'r5c7')" style="border:0; height:30px; width:40px;"  type="text" #r5c7="ngModel" pattern="[2]" class="form-control" name="r5c7" [(ngModel)]="userModel.r5c7"></td>  
+    <td [class.redborder]="r5c8.invalid && r5c8.touched"><input required (blur)="decreaseChance(r5c8.invalid, r5c8.dirty,'r5c8')" style="border:0; height:30px; width:40px;"  type="text" #r5c8="ngModel" pattern="[8]" class="form-control" name="r5c8" [(ngModel)]="userModel.r5c8"></td>
+  </tr>
+  <tr>
+    <td [class.redborder]="r6c0.invalid && r6c0.touched"><input required (blur)="decreaseChance(r6c0.invalid, r6c0.dirty,'r6c0')" style="border:0; height:30px; width:40px;"  type="text" #r6c0="ngModel" pattern="[5]" class="form-control" name="r6c0" [(ngModel)]="userModel.r6c0"></td>
+    <td [class.redborder]="r6c1.invalid && r6c1.touched"><input required (blur)="decreaseChance(r6c1.invalid, r6c1.dirty,'r6c1')" style="border:0; height:30px; width:40px;"  type="text" #r6c1="ngModel" pattern="[1]" class="form-control" name="r6c1" [(ngModel)]="userModel.r6c1"></td>  
+    <td [class.redborder]="r6c2.invalid && r6c2.touched"><input required (blur)="decreaseChance(r6c2.invalid, r6c2.dirty,'r6c2')" style="border:0; height:30px; width:40px;"  type="text" #r6c2="ngModel" pattern="[9]" class="form-control" name="r6c2" [(ngModel)]="userModel.r6c2"></td>
+    <td [class.redborder]="r6c3.invalid && r6c3.touched"><input required (blur)="decreaseChance(r6c3.invalid, r6c3.dirty,'r6c3')" style="border:0; height:30px; width:40px;"  type="text" #r6c3="ngModel" pattern="[3]" class="form-control" name="r6c3" [(ngModel)]="userModel.r6c3"></td>  
+    <td [class.redborder]="r6c4.invalid && r6c4.touched"><input required (blur)="decreaseChance(r6c4.invalid, r6c4.dirty,'r6c4')" style="border:0; height:30px; width:40px;"  type="text" #r6c4="ngModel" pattern="[2]" class="form-control" name="r6c4" [(ngModel)]="userModel.r6c4"></td>
+    <td [class.redborder]="r6c5.invalid && r6c5.touched"><input required (blur)="decreaseChance(r6c5.invalid, r6c5.dirty,'r6c5')" style="border:0; height:30px; width:40px;"  type="text" #r6c5="ngModel" pattern="[6]" class="form-control" name="r6c5" [(ngModel)]="userModel.r6c5"></td>  
+    <td [class.redborder]="r6c6.invalid && r6c6.touched"><input required (blur)="decreaseChance(r6c6.invalid, r6c6.dirty,'r6c6')" style="border:0; height:30px; width:40px;"  type="text" #r6c6="ngModel" pattern="[8]" class="form-control" name="r6c6" [(ngModel)]="userModel.r6c6"></td>
+    <td [class.redborder]="r6c7.invalid && r6c7.touched"><input required (blur)="decreaseChance(r6c7.invalid, r6c7.dirty,'r6c7')" style="border:0; height:30px; width:40px;"  type="text" #r6c7="ngModel" pattern="[7]" class="form-control" name="r6c7" [(ngModel)]="userModel.r6c7"></td>  
+    <td [class.redborder]="r6c8.invalid && r6c8.touched"><input required (blur)="decreaseChance(r6c8.invalid, r6c8.dirty,'r6c8')" style="border:0; height:30px; width:40px;"  type="text" #r6c8="ngModel" pattern="[4]" class="form-control" name="r6c8" [(ngModel)]="userModel.r6c8"></td>
+  </tr>
+  <tr>
+    <td [class.redborder]="r7c0.invalid && r7c0.touched"><input required (blur)="decreaseChance(r7c0.invalid, r7c0.dirty,'r7c0')" style="border:0; height:30px; width:40px;"  type="text" #r7c0="ngModel" pattern="[2]" class="form-control" name="r7c0" [(ngModel)]="userModel.r7c0"></td>
+    <td [class.redborder]="r7c1.invalid && r7c1.touched"><input required (blur)="decreaseChance(r7c1.invalid, r7c1.dirty,'r7c1')" style="border:0; height:30px; width:40px;"  type="text" #r7c1="ngModel" pattern="[4]" class="form-control" name="r7c1" [(ngModel)]="userModel.r7c1"></td>  
+    <td [class.redborder]="r7c2.invalid && r7c2.touched"><input required (blur)="decreaseChance(r7c2.invalid, r7c2.dirty,'r7c2')" style="border:0; height:30px; width:40px;"  type="text" #r7c2="ngModel" pattern="[8]" class="form-control" name="r7c2" [(ngModel)]="userModel.r7c2"></td>
+    <td [class.redborder]="r7c3.invalid && r7c3.touched"><input required (blur)="decreaseChance(r7c3.invalid, r7c3.dirty,'r7c3')" style="border:0; height:30px; width:40px;"  type="text" #r7c3="ngModel" pattern="[9]" class="form-control" name="r7c3" [(ngModel)]="userModel.r7c3"></td>  
+    <td [class.redborder]="r7c4.invalid && r7c4.touched"><input required (blur)="decreaseChance(r7c4.invalid, r7c4.dirty,'r7c4')" style="border:0; height:30px; width:40px;"  type="text" #r7c4="ngModel" pattern="[5]" class="form-control" name="r7c4" [(ngModel)]="userModel.r7c4"></td>
+    <td [class.redborder]="r7c5.invalid && r7c5.touched"><input required (blur)="decreaseChance(r7c5.invalid, r7c5.dirty,'r7c5')" style="border:0; height:30px; width:40px;"  type="text" #r7c5="ngModel" pattern="[7]" class="form-control" name="r7c5" [(ngModel)]="userModel.r7c5"></td>  
+    <td [class.redborder]="r7c6.invalid && r7c6.touched"><input required (blur)="decreaseChance(r7c6.invalid, r7c6.dirty,'r7c6')" style="border:0; height:30px; width:40px;"  type="text" #r7c6="ngModel" pattern="[1]" class="form-control" name="r7c6" [(ngModel)]="userModel.r7c6"></td>
+    <td [class.redborder]="r7c7.invalid && r7c7.touched"><input required (blur)="decreaseChance(r7c7.invalid, r7c7.dirty,'r7c7')" style="border:0; height:30px; width:40px;"  type="text" #r7c7="ngModel" pattern="[3]" class="form-control" name="r7c7" [(ngModel)]="userModel.r7c7"></td>  
+    <td [class.redborder]="r7c8.invalid && r7c8.touched"><input required (blur)="decreaseChance(r7c8.invalid, r7c8.dirty,'r7c8')" style="border:0; height:30px; width:40px;"  type="text" #r7c8="ngModel" pattern="[6]" class="form-control" name="r7c8" [(ngModel)]="userModel.r7c8"></td>
+  </tr>
+  <tr>
+    <td [class.redborder]="r8c0.invalid && r8c0.touched"><input required (blur)="decreaseChance(r8c0.invalid, r8c0.dirty,'r8c0')" style="border:0; height:30px; width:40px;"  type="text" #r8c0="ngModel" pattern="[7]" class="form-control" name="r8c0" [(ngModel)]="userModel.r8c0"></td>
+    <td [class.redborder]="r8c1.invalid && r8c1.touched"><input required (blur)="decreaseChance(r8c1.invalid, r8c1.dirty,'r8c1')" style="border:0; height:30px; width:40px;"  type="text" #r8c1="ngModel" pattern="[6]" class="form-control" name="r8c1" [(ngModel)]="userModel.r8c1"></td>  
+    <td [class.redborder]="r8c2.invalid && r8c2.touched"><input required (blur)="decreaseChance(r8c2.invalid, r8c2.dirty,'r8c2')" style="border:0; height:30px; width:40px;"  type="text" #r8c2="ngModel" pattern="[3]" class="form-control" name="r8c2" [(ngModel)]="userModel.r8c2"></td>
+    <td [class.redborder]="r8c3.invalid && r8c3.touched"><input required (blur)="decreaseChance(r8c3.invalid, r8c3.dirty,'r8c3')" style="border:0; height:30px; width:40px;"  type="text" #r8c3="ngModel" pattern="[4]" class="form-control" name="r8c3" [(ngModel)]="userModel.r8c3"></td>  
+    <td [class.redborder]="r8c4.invalid && r8c4.touched"><input required (blur)="decreaseChance(r8c4.invalid, r8c4.dirty,'r8c4')" style="border:0; height:30px; width:40px;"  type="text" #r8c4="ngModel" pattern="[1]" class="form-control" name="r8c4" [(ngModel)]="userModel.r8c4"></td>
+    <td [class.redborder]="r8c5.invalid && r8c5.touched"><input required (blur)="decreaseChance(r8c5.invalid, r8c5.dirty,'r8c5')" style="border:0; height:30px; width:40px;"  type="text" #r8c5="ngModel" pattern="[8]" class="form-control" name="r8c5" [(ngModel)]="userModel.r8c5"></td>  
+    <td [class.redborder]="r8c6.invalid && r8c6.touched"><input required (blur)="decreaseChance(r8c6.invalid, r8c6.dirty,'r8c6')" style="border:0; height:30px; width:40px;"  type="text" #r8c6="ngModel" pattern="[2]" class="form-control" name="r8c6" [(ngModel)]="userModel.r8c6"></td>
+    <td [class.redborder]="r8c7.invalid && r8c7.touched"><input required (blur)="decreaseChance(r8c7.invalid, r8c7.dirty,'r8c7')" style="border:0; height:30px; width:40px;"  type="text" #r8c7="ngModel" pattern="[5]" class="form-control" name="r8c7" [(ngModel)]="userModel.r8c7"></td>  
+    <td [class.redborder]="r8c8.invalid && r8c8.touched"><input required (blur)="decreaseChance(r8c8.invalid, r8c8.dirty,'r8c8')" style="border:0; height:30px; width:40px;"  type="text" #r8c8="ngModel" pattern="[9]" class="form-control" name="r8c8" [(ngModel)]="userModel.r8c8"></td>
+  </tr>
+</table>
+</div>
+<button [disabled]="btn_disable" (click)="onSubmit()"> Submit</button>
+</form>
+<router-outlet></router-outlet>
