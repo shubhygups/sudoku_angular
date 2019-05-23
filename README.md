@@ -25,4 +25,4 @@ If a user pressed submit button without filling the values. It will alert the us
 ![alt text](https://github.com/shubhygups/sudoku_angular/blob/master/complete_sudoku.JPG)
 
 ## Sudoku Game over
-![alt text]https://github.com/shubhygups/sudoku_angular/blob/master/game_over.JPG)
+![alt text](https://github.com/shubhygups/sudoku_angular/blob/master/game_over.JPG)
