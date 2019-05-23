@@ -21,6 +21,10 @@ There are only 3 mistaked allowed. After that game will be over with message dis
 
 If a user pressed submit button without filling the values. It will alert the user by displaying the message of "Values are still require" with number of mistakes left.  
 
+## Landing page
+
+![alt text](https://github.com/shubhygups/sudoku_angular/blob/master/intial_sudoku.JPG)
+
 ## Sudoku Complete Successful
 ![alt text](https://github.com/shubhygups/sudoku_angular/blob/master/complete_sudoku.JPG)
 
